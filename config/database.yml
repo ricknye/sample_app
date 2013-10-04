@@ -6,13 +6,16 @@
 
 
 development:
-  adapter: postgresql
-  host: localhost
-  username: user
-  database: app-dev
-  # modified 18SEP2013 by ranye 
-#  adapter: sqlite3
-#  database: db/development.sqlite3
+  #adapter: postgresql
+  #host: localhost
+  #database: app-dev
+  #username: user
+  #password: 3fOVRYDX*4
+
+  # modified 18SEP2013 by ranye
+  # changed it back 02OCT2013 
+  adapter: sqlite3
+  database: db/development.sqlite3
   pool: 5
   timeout: 5000
 

@@ -1,5 +1,6 @@
 SampleApp::Application.routes.draw do
-  get "users/new"
+  # get "users/new" # removed 30OCT2013 ranye
+  resources :users
 
   root to: 'static_pages#home'
   

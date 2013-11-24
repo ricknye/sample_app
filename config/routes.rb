@@ -2,6 +2,7 @@ SampleApp::Application.routes.draw do
   # get "users/new" # removed 30OCT2013 ranye
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
+  resources :microposts, only: [:create, :destroy]
   
   root to: 'static_pages#home'
   
